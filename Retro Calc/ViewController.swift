@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         case Subtract = "-"
         case Empty = "Empty"
         case Add = "+"
+        case Clear = "Clear"
     }
     
     @IBOutlet weak var outputLbl: UILabel!
@@ -74,12 +75,23 @@ class ViewController: UIViewController {
         processOperation(currentOperation)
     }
     
-    func processOperation(op: Operation) {
+    @IBAction func onClearPressed(sender: AnyObject) {
+        processOperation(Operation.Clear)
+    }
+    
+    func processOperation(var op: Operation) {
         playSound()
         
-        if currentOperation != Operation.Empty {
+        
+        if currentOperation == Operation.Clear {
+            outputLbl.text = "0"
+            op = Operation.Empty
+            runningNumber = "" 
+            leftValStr = ""
+            rightValStr = ""
+        } else if currentOperation != Operation.Empty {
             // Math
-            
+
             // A user selected an operator, but then selected another
             // operator without first entering a number
             if runningNumber != "" {
@@ -98,10 +110,11 @@ class ViewController: UIViewController {
                 
                 leftValStr = result
                 outputLbl.text = result
+
             }
             
             currentOperation = op
-            
+
         } else {
             // Operator pressed for the first time
             leftValStr = runningNumber
