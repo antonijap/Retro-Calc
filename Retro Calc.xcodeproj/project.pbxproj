@@ -15,6 +15,7 @@
 		68A2B6E61C6666D900535D7E /* Retro_CalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2B6E51C6666D900535D7E /* Retro_CalcTests.swift */; };
 		68A2B6F11C6666D900535D7E /* Retro_CalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2B6F01C6666D900535D7E /* Retro_CalcUITests.swift */; };
 		68A2B6FF1C6779B600535D7E /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68A2B6FE1C6779B600535D7E /* Minecraft.ttf */; };
+		68A2B7011C67CC6000535D7E /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 68A2B7001C67CC6000535D7E /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		68A2B6F01C6666D900535D7E /* Retro_CalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Retro_CalcUITests.swift; sourceTree = "<group>"; };
 		68A2B6F21C6666D900535D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68A2B6FE1C6779B600535D7E /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		68A2B7001C67CC6000535D7E /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				68A2B6FE1C6779B600535D7E /* Minecraft.ttf */,
+				68A2B7001C67CC6000535D7E /* btn.wav */,
 				68A2B6D01C6666D800535D7E /* AppDelegate.swift */,
 				68A2B6D21C6666D800535D7E /* ViewController.swift */,
 				68A2B6D41C6666D800535D7E /* Main.storyboard */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A2B7011C67CC6000535D7E /* btn.wav in Resources */,
 				68A2B6DB1C6666D800535D7E /* LaunchScreen.storyboard in Resources */,
 				68A2B6D81C6666D800535D7E /* Assets.xcassets in Resources */,
 				68A2B6FF1C6779B600535D7E /* Minecraft.ttf in Resources */,
