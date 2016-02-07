@@ -105,6 +105,7 @@ class ViewController: UIViewController {
         } else {
             // Operator pressed for the first time
             leftValStr = runningNumber
+            runningNumber = ""
             currentOperation = op
         }
     }
