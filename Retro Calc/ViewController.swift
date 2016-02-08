@@ -79,13 +79,13 @@ class ViewController: UIViewController {
         processOperation(Operation.Clear)
     }
     
-    func processOperation(var op: Operation) {
+    func processOperation(op: Operation) {
         playSound()
         
         
-        if currentOperation == Operation.Clear {
+        if op == Operation.Clear {
             outputLbl.text = "0"
-            op = Operation.Empty
+            currentOperation = Operation.Empty
             runningNumber = "" 
             leftValStr = ""
             rightValStr = ""
@@ -117,9 +117,13 @@ class ViewController: UIViewController {
 
         } else {
             // Operator pressed for the first time
-            leftValStr = runningNumber
-            runningNumber = ""
-            currentOperation = op
+            if runningNumber != "" {
+                leftValStr = runningNumber
+                runningNumber = ""
+                currentOperation = op
+            }
+                
+            
         }
     }
     
